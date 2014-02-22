@@ -92,7 +92,8 @@ public class Shop implements Listener, CommandExecutor {
 					player.sendMessage("Purchased!");
 					takeMoney(player, 1000);
 				} else if (bal <= 100) {
-					player.sendMessage("You are to poor for that :(");
+					player.sendMessage("You are to poor, get kills to get more money");
+					
 				}
 			} else if (clicked.getType() == Material.IRON_HOE) {
 				if (bal >= 1500) {
@@ -100,7 +101,7 @@ public class Shop implements Listener, CommandExecutor {
 							new ItemStack(Material.IRON_HOE, 1));
 					player.sendMessage("Purchased!");
 				} else if (bal < 1500) {
-					player.sendMessage("You are to poor for that :(");
+					player.sendMessage("You are to poor, get kills to get more money");
 				}
 			} else if (clicked.getType() == Material.GOLD_HOE) {
 				if (bal >= 5000) {
@@ -109,7 +110,7 @@ public class Shop implements Listener, CommandExecutor {
 					player.sendMessage("Purchased!");
 				} else if (plugin.getConfig().getInt(
 						player.getName() + ".Money") <= 5000) {
-					player.sendMessage("You are to poor for that :(");
+					player.sendMessage("You are to poor, get kills to get more money");
 				}
 			} else if (clicked.getType() == Material.DIAMOND_HOE) {
 				if (bal >= 5000) {
@@ -117,7 +118,7 @@ public class Shop implements Listener, CommandExecutor {
 							new ItemStack(Material.DIAMOND_HOE, 1));
 					player.sendMessage(g + "Purchased: " + b + "Machine Gun");
 				} else if (bal < 5000) {
-					player.sendMessage("You are to poor for that :(");
+					player.sendMessage("You are to poor, get kills to get more money");
 				}
 			} else if (clicked.getType() == Material.POTION) {
 				player.sendMessage("Grenades coming soon!");
