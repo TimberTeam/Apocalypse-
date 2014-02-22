@@ -72,6 +72,6 @@ public class Currency implements Listener {
 		plugin.getConfig().set(p.getName() + ".Money",
 				plugin.getConfig().getInt(p.getName() + ".Money", 0) - i);
 		plugin.saveConfig();
-		p.sendMessage(pre + "�c�l$" + i + " Money taken!");
+		p.sendMessage(pre + "$" + i + " Money taken!");
 	}
 }
