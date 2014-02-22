@@ -47,6 +47,7 @@ public class Currency implements Listener {
 			if (v.getKiller() instanceof Player) {
 				Player p = v.getKiller();
 				takeMoney(p, 20);
+				p.sendMessage(ChatColor.RED + "You killed an innocent cilvillan)
 			}
 		} else if (e.getEntity() instanceof HumanEntity) {
 			Player p = (Player) e.getEntity();
@@ -71,6 +72,6 @@ public class Currency implements Listener {
 		plugin.getConfig().set(p.getName() + ".Money",
 				plugin.getConfig().getInt(p.getName() + ".Money", 0) - i);
 		plugin.saveConfig();
-		p.sendMessage(pre + "§c§l$" + i + " Money taken!");
+		p.sendMessage(pre + "ï¿½cï¿½l$" + i + " Money taken!");
 	}
 }
