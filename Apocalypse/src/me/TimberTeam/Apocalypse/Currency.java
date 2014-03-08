@@ -49,7 +49,7 @@ public class Currency implements Listener {
 				takeMoney(p, 20);
 				p.sendMessage(ChatColor.RED + "You killed an innocent cilvillan)
 			}
-		} else if (e.getEntity() instanceof HumanEntity) {
+		} if (e.getEntity() instanceof HumanEntity) {
 			Player p = (Player) e.getEntity();
 			if (p.getKiller() instanceof Player) {
 				Player killer = p.getKiller();
