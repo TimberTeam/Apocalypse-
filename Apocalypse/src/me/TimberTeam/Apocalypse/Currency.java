@@ -47,7 +47,7 @@ public class Currency implements Listener {
 			if (v.getKiller() instanceof Player) {
 				Player p = v.getKiller();
 				takeMoney(p, 20);
-				p.sendMessage(ChatColor.RED + "You killed an innocent cilvillan)
+				p.sendMessage(ChatColor.RED + "You killed an innocent cilvillan");
 			}
 		} if (e.getEntity() instanceof HumanEntity) {
 			Player p = (Player) e.getEntity();
